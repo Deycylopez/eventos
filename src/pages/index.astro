@@ -1,16 +1,78 @@
----
 
 ---
+import '../styles/global.css';
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+---
 
-<html lang="en">
+<html lang="es">
 	<head>
 		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" type="image/png" href="/logo.png" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>Inicio | Eventos El Cheffi - Organizadores de eventos únicos</title>
+		<meta name="description" content="Eventos El Cheffi - Especialistas en organización de bodas, quinceañeros, eventos corporativos y celebraciones especiales. Más de 10 años de experiencia." />
 	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+<body>
+	<Navbar />
+	<main class="min-h-screen">
+	  <!-- Hero principal -->
+	  <section class="bg-gradient-to-r from-purple-100 to-pink-100 py-16 flex flex-col items-center justify-center text-center">
+		<img src="/logo.png" alt="Logotipo Eventos El Cheffi" class="w-32 h-32 rounded-full mb-4 shadow-lg" />
+		<h1 class="text-4xl md:text-6xl font-bold mb-4 text-purple-800">Eventos El Cheffi</h1>
+		<p class="text-lg md:text-2xl mb-6 text-gray-700">Creamos experiencias únicas e inolvidables</p>
+		<a href="/contacto" class="bg-purple-600 text-white px-8 py-3 rounded-full font-semibold shadow-lg hover:bg-purple-700 transition transform hover:scale-105">Solicita tu cotización</a>
+	  </section>
+	  <!-- Galería de eventos -->
+	  <section class="py-12 bg-white">
+		<h2 class="text-3xl font-bold text-center mb-8 text-purple-600">Galería de Eventos</h2>
+		<div class="grid grid-cols-1 md:grid-cols-3 gap-6 px-4 md:px-8 max-w-6xl mx-auto">
+		  <img src="/evento1.jpg" alt="Boda elegante organizada por El Cheffi" class="rounded-lg shadow-md hover:shadow-xl transition" />
+		  <img src="/evento2.jpg" alt="Quinceañero temático organizado por El Cheffi" class="rounded-lg shadow-md hover:shadow-xl transition" />
+		  <img src="/evento3.jpg" alt="Evento corporativo organizado por El Cheffi" class="rounded-lg shadow-md hover:shadow-xl transition" />
+		</div>
+	  </section>
+	  <!-- Breve presentación de servicios -->
+	  <section class="py-12 bg-purple-50">
+		<h2 class="text-2xl font-bold text-center mb-6 text-purple-700">Nuestros Servicios Especializados</h2>
+		<div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 px-4">
+		  <div class="bg-white p-6 rounded-lg shadow">
+			<h3 class="font-bold text-purple-600 mb-2">🎊 Bodas de Ensueño</h3>
+			<p>Coordinación integral desde la ceremonia hasta la recepción</p>
+		  </div>
+		  <div class="bg-white p-6 rounded-lg shadow">
+			<h3 class="font-bold text-purple-600 mb-2">👑 Quinceañeros Únicos</h3>
+			<p>Celebraciones temáticas personalizadas y memorables</p>
+		  </div>
+		  <div class="bg-white p-6 rounded-lg shadow">
+			<h3 class="font-bold text-purple-600 mb-2">🏢 Eventos Corporativos</h3>
+			<p>Conferencias, inauguraciones y celebraciones empresariales</p>
+		  </div>
+		  <div class="bg-white p-6 rounded-lg shadow">
+			<h3 class="font-bold text-purple-600 mb-2">🎂 Cumpleaños Especiales</h3>
+			<p>Fiestas infantiles y adultos con decoración personalizada</p>
+		  </div>
+		</div>
+	  </section>
+	  <!-- Clientes genéricos -->
+	  <section class="py-12 bg-white">
+		<h2 class="text-2xl font-bold text-center mb-6 text-purple-700">Nuestros Clientes Satisfechos</h2>
+		<div class="flex justify-center gap-6 grayscale hover:grayscale-0 transition duration-300">
+		  <img src="/cliente1.svg" alt="Hotel Marriott" class="h-16 w-16 rounded-full" />
+		  <img src="/cliente2.svg" alt="Empresa Textiles SA" class="h-16 w-16 rounded-full" />
+		  <img src="/cliente3.svg" alt="Restaurante El Jardín" class="h-16 w-16 rounded-full" />
+		  <img src="/cliente4.svg" alt="Familia González" class="h-16 w-16 rounded-full" />
+		  <img src="/cliente5.svg" alt="Club Social Elite" class="h-16 w-16 rounded-full" />
+		</div>
+	  </section>
+	  <!-- Contacto rápido -->
+	  <section class="py-12 bg-gradient-to-r from-purple-100 to-pink-100 text-center">
+		<h2 class="text-2xl font-bold mb-4 text-purple-700">¿Listo para tu evento perfecto?</h2>
+		<p class="mb-6 text-gray-600">Más de 500 eventos exitosos nos respaldan</p>
+		<a href="https://wa.me/5218341234567" target="_blank" class="bg-green-500 text-white px-8 py-3 rounded-full font-semibold shadow-lg hover:bg-green-600 transition transform hover:scale-105">💬 Contáctanos por WhatsApp</a>
+	  </section>
+	</main>
+	<Footer />
+</body>
 </html>

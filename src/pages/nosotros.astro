@@ -1,0 +1,65 @@
+---
+import '../styles/global.css';
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+---
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Nosotros | Eventos El Cheffi</title>
+    <meta name="description" content="Conoce a Eventos El Cheffi, más de 10 años creando experiencias únicas. Nuestro equipo especializado en bodas, quinceañeros y eventos corporativos." />
+  </head>
+  <body>
+    <Navbar />
+    <main class="min-h-screen">
+      <h1 class="text-3xl font-bold text-center mt-8 text-purple-700">Nosotros</h1>
+      <section class="max-w-4xl mx-auto py-8 px-4">
+        <div class="bg-gradient-to-r from-purple-50 to-pink-50 p-8 rounded-lg mb-8">
+          <h2 class="text-2xl font-bold mb-4 text-purple-700">¿Quiénes somos?</h2>
+          <p class="mb-6 text-gray-700 leading-relaxed">Eventos El Cheffi es una empresa familiar especializada en la organización integral de eventos sociales y corporativos. Con más de 10 años de experiencia en el sector, nos hemos consolidado como referentes en la creación de celebraciones únicas y memorables.</p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+          <div class="bg-white p-6 rounded-lg shadow">
+            <h2 class="text-xl font-bold mb-3 text-purple-600">🎯 Misión</h2>
+            <p class="text-gray-700">Crear experiencias únicas e inolvidables que superen las expectativas de nuestros clientes, cuidando cada detalle desde la planificación hasta la ejecución perfecta del evento.</p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow">
+            <h2 class="text-xl font-bold mb-3 text-purple-600">🌟 Visión</h2>
+            <p class="text-gray-700">Ser la empresa líder en organización de eventos en la región, reconocida por nuestra creatividad, profesionalismo y compromiso con la excelencia.</p>
+          </div>
+        </div>
+
+        <div class="bg-white p-8 rounded-lg shadow mb-8">
+          <h2 class="text-xl font-bold mb-4 text-purple-600">📖 Nuestra Historia</h2>
+          <p class="mb-4 text-gray-700">Fundada en 2013 por la familia Cheffi, nuestra empresa nació del sueño de crear momentos mágicos para personas especiales. Comenzamos organizando bodas íntimas para amigos y familiares, y hoy en día hemos realizado más de 500 eventos exitosos.</p>
+          <p class="text-gray-700">Nuestro crecimiento se debe al compromiso con la calidad, la atención personalizada y la pasión por hacer realidad los sueños de nuestros clientes.</p>
+        </div>
+
+        <div class="text-center">
+          <h2 class="text-xl font-bold mb-6 text-purple-700">👥 Nuestro Equipo Profesional</h2>
+          <div class="flex flex-wrap gap-8 justify-center">
+            <div class="text-center">
+              <img src="/equipo1.jpg" alt="María Cheffi - Directora General" class="w-32 h-32 rounded-full object-cover mx-auto mb-2 border-4 border-purple-200" />
+              <h3 class="font-semibold text-purple-600">María Cheffi</h3>
+              <p class="text-sm text-gray-600">Directora General</p>
+            </div>
+            <div class="text-center">
+              <img src="/equipo2.jpg" alt="Carlos Cheffi - Coordinador de Eventos" class="w-32 h-32 rounded-full object-cover mx-auto mb-2 border-4 border-purple-200" />
+              <h3 class="font-semibold text-purple-600">Carlos Cheffi</h3>
+              <p class="text-sm text-gray-600">Coordinador de Eventos</p>
+            </div>
+            <div class="text-center">
+              <img src="/equipo3.jpg" alt="Ana Rodríguez - Especialista en Decoración" class="w-32 h-32 rounded-full object-cover mx-auto mb-2 border-4 border-purple-200" />
+              <h3 class="font-semibold text-purple-600">Ana Rodríguez</h3>
+              <p class="text-sm text-gray-600">Especialista en Decoración</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <Footer />
+  </body>
+</html>

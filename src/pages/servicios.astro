@@ -1,0 +1,140 @@
+---
+import '../styles/global.css';
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+---
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Servicios | Eventos El Cheffi</title>
+    <meta name="description" content="Servicios especializados de Eventos El Cheffi: bodas, quinceañeros, eventos corporativos, decoración y catering. Más de 10 años de experiencia." />
+  </head>
+  <body>
+    <Navbar />
+    <main class="min-h-screen">
+      <h1 class="text-3xl font-bold text-center mt-8 text-purple-700">Nuestros Servicios</h1>
+      <section class="max-w-6xl mx-auto py-8 px-4">
+        <div class="text-center mb-12">
+          <p class="text-lg text-gray-600">Eventos El Cheffi ofrece servicios integrales para hacer de tu celebración un momento único</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+          <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition">
+            <div class="text-4xl mb-4 text-center">💍</div>
+            <h3 class="text-xl font-bold mb-3 text-purple-600">Bodas de Ensueño</h3>
+            <ul class="text-gray-700 space-y-2">
+              <li>• Coordinación integral de la ceremonia</li>
+              <li>• Decoración personalizada del venue</li>
+              <li>• Gestión de proveedores especializados</li>
+              <li>• Coordinación del día de la boda</li>
+              <li>• Servicio de wedding planner</li>
+            </ul>
+          </div>
+
+          <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition">
+            <div class="text-4xl mb-4 text-center">👑</div>
+            <h3 class="text-xl font-bold mb-3 text-purple-600">Quinceañeros Temáticos</h3>
+            <ul class="text-gray-700 space-y-2">
+              <li>• Temas personalizados únicos</li>
+              <li>• Decoración de salón completa</li>
+              <li>• Coordinación de vals y protocolo</li>
+              <li>• Servicio de DJ y animación</li>
+              <li>• Fotografía y videografía</li>
+            </ul>
+          </div>
+
+          <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition">
+            <div class="text-4xl mb-4 text-center">🏢</div>
+            <h3 class="text-xl font-bold mb-3 text-purple-600">Eventos Corporativos</h3>
+            <ul class="text-gray-700 space-y-2">
+              <li>• Conferencias y seminarios</li>
+              <li>• Inauguraciones y lanzamientos</li>
+              <li>• Cenas de gala empresariales</li>
+              <li>• Team building y integraciones</li>
+              <li>• Convenciones y exposiciones</li>
+            </ul>
+          </div>
+
+          <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition">
+            <div class="text-4xl mb-4 text-center">🎂</div>
+            <h3 class="text-xl font-bold mb-3 text-purple-600">Cumpleaños Especiales</h3>
+            <ul class="text-gray-700 space-y-2">
+              <li>• Fiestas infantiles temáticas</li>
+              <li>• Celebraciones de adultos</li>
+              <li>• Decoración edad-apropiada</li>
+              <li>• Entretenimiento especializado</li>
+              <li>• Catering personalizado</li>
+            </ul>
+          </div>
+
+          <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition">
+            <div class="text-4xl mb-4 text-center">🎨</div>
+            <h3 class="text-xl font-bold mb-3 text-purple-600">Decoración y Ambientación</h3>
+            <ul class="text-gray-700 space-y-2">
+              <li>• Diseño de espacios únicos</li>
+              <li>• Mobiliario especializado</li>
+              <li>• Iluminación profesional</li>
+              <li>• Arreglos florales exclusivos</li>
+              <li>• Montaje y desmontaje</li>
+            </ul>
+          </div>
+
+          <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition">
+            <div class="text-4xl mb-4 text-center">🍽️</div>
+            <h3 class="text-xl font-bold mb-3 text-purple-600">Catering Premium</h3>
+            <ul class="text-gray-700 space-y-2">
+              <li>• Menús personalizados</li>
+              <li>• Servicio de meseros profesionales</li>
+              <li>• Barra libre especializada</li>
+              <li>• Pasteles y postres exclusivos</li>
+              <li>• Opciones vegetarianas y veganas</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="bg-gradient-to-r from-purple-50 to-pink-50 p-8 rounded-lg mb-8">
+          <h2 class="text-2xl font-bold mb-6 text-purple-700 text-center">Galería de Nuestros Procesos</h2>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="text-center">
+              <img src="/proceso1.jpg" alt="Montaje de decoración para boda" class="rounded-lg shadow-md mb-3" />
+              <h4 class="font-semibold text-purple-600">Montaje y Decoración</h4>
+            </div>
+            <div class="text-center">
+              <img src="/proceso2.jpg" alt="Preparación de catering gourmet" class="rounded-lg shadow-md mb-3" />
+              <h4 class="font-semibold text-purple-600">Catering Gourmet</h4>
+            </div>
+            <div class="text-center">
+              <img src="/proceso3.jpg" alt="Coordinación el día del evento" class="rounded-lg shadow-md mb-3" />
+              <h4 class="font-semibold text-purple-600">Coordinación Profesional</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white p-8 rounded-lg shadow">
+          <h2 class="text-2xl font-bold mb-6 text-purple-700">¿Por qué elegir Eventos El Cheffi?</h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div>
+              <h3 class="font-bold text-purple-600 mb-2">✨ Experiencia Comprobada</h3>
+              <p class="text-gray-700 mb-4">Más de 10 años en el mercado y 500+ eventos exitosos nos respaldan.</p>
+            </div>
+            <div>
+              <h3 class="font-bold text-purple-600 mb-2">🎯 Atención Personalizada</h3>
+              <p class="text-gray-700 mb-4">Cada evento es único y trabajamos para hacer realidad tu visión específica.</p>
+            </div>
+            <div>
+              <h3 class="font-bold text-purple-600 mb-2">🤝 Proveedores Certificados</h3>
+              <p class="text-gray-700 mb-4">Red de proveedores confiables y con estándares de calidad garantizados.</p>
+            </div>
+            <div>
+              <h3 class="font-bold text-purple-600 mb-2">📱 Coordinación en Tiempo Real</h3>
+              <p class="text-gray-700 mb-4">Seguimiento constante y comunicación directa durante todo el proceso.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <Footer />
+  </body>
+</html>
