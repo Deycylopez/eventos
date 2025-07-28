@@ -1,5 +1,4 @@
 /* Import Tailwind CSS via CDN if not using a build tool */
-@import url('https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css');
 
 /* Estilos personalizados adicionales si necesitas */
 html {
@@ -8,4 +7,24 @@ html {
 
 body {
   font-family: 'Arial', sans-serif;
+  overflow-x: hidden;
+}
+
+/* Responsive improvements */
+@media (max-width: 640px) {
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  /* Evitar scroll horizontal */
+  * {
+    max-width: 100%;
+  }
+  
+  /* Mejorar spacing en móvil */
+  .hero-mobile {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
 }
