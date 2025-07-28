@@ -18,47 +18,98 @@ import Footer from '../components/Footer.astro';
 	<Navbar />
 	<main class="min-h-screen">
 	  <!-- Hero principal -->
-	  <section class="bg-gradient-to-r from-purple-100 to-pink-100 py-12 sm:py-16 flex flex-col items-center justify-center text-center px-4">
-		<img src="/logo.png" alt="Logotipo Eventos El Cheffi" class="w-24 h-24 sm:w-32 sm:h-32 rounded-full mb-4 shadow-lg" />
-		<h1 class="text-3xl sm:text-4xl md:text-6xl font-bold mb-4 text-purple-800">Eventos El Cheffi</h1>
-		<p class="text-base sm:text-lg md:text-2xl mb-6 text-gray-700 max-w-2xl">Creamos experiencias únicas e inolvidables</p>
-		<a href="/contacto" class="bg-purple-600 text-white px-6 sm:px-8 py-3 rounded-full font-semibold shadow-lg hover:bg-purple-700 transition transform hover:scale-105">Solicita tu cotización</a>
+	  <section class="bg-gradient-to-r from-purple-100 to-pink-100 py-12 sm:py-16 flex flex-col items-center justify-center text-center px-4 relative overflow-hidden">
+		<div class="absolute inset-0 bg-gradient-to-r from-purple-200/30 to-pink-200/30"></div>
+		<img src="/logo.png" alt="Logotipo Eventos El Cheffi" class="w-24 h-24 sm:w-32 sm:h-32 rounded-full mb-4 shadow-lg relative z-10 scroll-reveal" />
+		<h1 class="text-3xl sm:text-4xl md:text-6xl font-bold mb-4 text-purple-800 relative z-10 scroll-reveal">Eventos El Cheffi</h1>
+		<p class="text-base sm:text-lg md:text-2xl mb-6 text-gray-700 max-w-2xl relative z-10 scroll-reveal">Creamos experiencias únicas e inolvidables</p>
+		<a href="/contacto" class="primary-btn bg-purple-600 text-white px-6 sm:px-8 py-3 rounded-full font-semibold shadow-lg hover:bg-purple-700 transition transform hover:scale-105 relative z-10 scroll-reveal">Solicita tu cotización</a>
 	  </section>
-	  <!-- Galería de eventos -->
-	  <section class="py-8 sm:py-12 bg-white">
-		<h2 class="text-2xl sm:text-3xl font-bold text-center mb-6 sm:mb-8 text-purple-600 px-4">Galería de Eventos</h2>
-		<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 px-4 md:px-8 max-w-6xl mx-auto">
-		  <img src="/evento1.jpg" alt="Boda elegante organizada por El Cheffi" class="rounded-lg shadow-md hover:shadow-xl transition w-full h-48 sm:h-56 object-cover" />
-		  <img src="/evento2.jpg" alt="Quinceañero temático organizado por El Cheffi" class="rounded-lg shadow-md hover:shadow-xl transition w-full h-48 sm:h-56 object-cover" />
-		  <img src="/evento3.jpg" alt="Evento corporativo organizado por El Cheffi" class="rounded-lg shadow-md hover:shadow-xl transition w-full h-48 sm:h-56 object-cover sm:col-span-2 md:col-span-1" />
+	  
+  <!-- Galería de eventos carrusel -->
+  <section class="py-8 sm:py-12 bg-white">
+	<h2 class="text-2xl sm:text-3xl font-bold text-center mb-6 sm:mb-8 text-purple-600 px-4 scroll-reveal">Galería de Eventos</h2>
+	<div class="max-w-4xl mx-auto px-4 md:px-8">
+	  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+	  <div class="swiper mySwiper rounded-lg shadow-lg">
+		<div class="swiper-wrapper">
+	  <!-- Imágenes cuadradas 1080x1080 optimizadas, puedes agregar más duplicando el bloque -->
+	  <div class="swiper-slide flex items-center justify-center">
+		<img src="/evento8.jpg" alt="Evento de gala: elegancia y distinción en El Cheffi" class="w-[300px] h-[300px] sm:w-[360px] sm:h-[360px] object-cover rounded-xl shadow-lg" loading="lazy" />
+	  </div>
+	  <div class="swiper-slide flex items-center justify-center">
+		<img src="/evento7.jpg" alt="Celebración familiar: ambiente acogedor y decoración personalizada" class="w-[300px] h-[300px] sm:w-[360px] sm:h-[360px] object-cover rounded-xl shadow-lg" loading="lazy" />
+	  </div>
+	  <div class="swiper-slide flex items-center justify-center">
+		<img src="/evento5.jpg" alt="Evento especial: montaje profesional y detalles únicos" class="w-[300px] h-[300px] sm:w-[360px] sm:h-[360px] object-cover rounded-xl shadow-lg" loading="lazy" />
+	  </div>
+	  <div class="swiper-slide flex items-center justify-center">
+		<img src="/evento4.jpg" alt="Evento social: decoración y ambiente festivo en El Cheffi" class="w-[300px] h-[300px] sm:w-[360px] sm:h-[360px] object-cover rounded-xl shadow-lg" loading="lazy" />
+	  </div>
+	  <div class="swiper-slide flex items-center justify-center">
+		<img src="/evento3.jpg" alt="Evento corporativo: equipo profesional y montaje empresarial" class="w-[300px] h-[300px] sm:w-[360px] sm:h-[360px] object-cover rounded-xl shadow-lg" loading="lazy" />
+	  </div>
+	  <div class="swiper-slide flex items-center justify-center">
+		<img src="/evento2.jpg" alt="Quinceañero temático: pista de baile y decoración especial" class="w-[300px] h-[300px] sm:w-[360px] sm:h-[360px] object-cover rounded-xl shadow-lg" loading="lazy" />
+	  </div>
 		</div>
-	  </section>
+		<!-- Controles -->
+		<div class="swiper-pagination"></div>
+		<div class="swiper-button-prev"></div>
+		<div class="swiper-button-next"></div>
+	  </div>
+	  <script type="module">
+		import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs';
+		document.addEventListener('DOMContentLoaded', function () {
+		  new Swiper('.mySwiper', {
+			slidesPerView: 1,
+			spaceBetween: 24,
+			loop: true,
+			pagination: {
+			  el: '.swiper-pagination',
+			  clickable: true,
+			},
+			navigation: {
+			  nextEl: '.swiper-button-next',
+			  prevEl: '.swiper-button-prev',
+			},
+			breakpoints: {
+			  640: { slidesPerView: 2 },
+			  1024: { slidesPerView: 3 }
+			}
+		  });
+		});
+	  </script>
+	</div>
+  </section>
+	  
 	  <!-- Breve presentación de servicios -->
 	  <section class="py-8 sm:py-12 bg-purple-50">
-		<h2 class="text-xl sm:text-2xl font-bold text-center mb-6 text-purple-700 px-4">Nuestros Servicios Especializados</h2>
+		<h2 class="text-xl sm:text-2xl font-bold text-center mb-6 text-purple-700 px-4 scroll-reveal">Nuestros Servicios Especializados</h2>
 		<div class="max-w-4xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 px-4">
-		  <div class="bg-white p-4 sm:p-6 rounded-lg shadow">
+		  <div class="bg-white p-4 sm:p-6 rounded-lg shadow scroll-reveal">
 			<h3 class="font-bold text-purple-600 mb-2 text-sm sm:text-base">🎊 Bodas de Ensueño</h3>
 			<p class="text-sm sm:text-base">Coordinación integral desde la ceremonia hasta la recepción</p>
 		  </div>
-		  <div class="bg-white p-4 sm:p-6 rounded-lg shadow">
+		  <div class="bg-white p-4 sm:p-6 rounded-lg shadow scroll-reveal">
 			<h3 class="font-bold text-purple-600 mb-2 text-sm sm:text-base">👑 Quinceañeros Únicos</h3>
 			<p class="text-sm sm:text-base">Celebraciones temáticas personalizadas y memorables</p>
 		  </div>
-		  <div class="bg-white p-4 sm:p-6 rounded-lg shadow">
+		  <div class="bg-white p-4 sm:p-6 rounded-lg shadow scroll-reveal">
 			<h3 class="font-bold text-purple-600 mb-2 text-sm sm:text-base">🏢 Eventos Corporativos</h3>
 			<p class="text-sm sm:text-base">Conferencias, inauguraciones y celebraciones empresariales</p>
 		  </div>
-		  <div class="bg-white p-4 sm:p-6 rounded-lg shadow">
+		  <div class="bg-white p-4 sm:p-6 rounded-lg shadow scroll-reveal">
 			<h3 class="font-bold text-purple-600 mb-2 text-sm sm:text-base">🎂 Cumpleaños Especiales</h3>
 			<p class="text-sm sm:text-base">Fiestas infantiles y adultos con decoración personalizada</p>
 		  </div>
 		</div>
 	  </section>
+	  
 	  <!-- Clientes genéricos -->
 	  <section class="py-8 sm:py-12 bg-white">
-		<h2 class="text-xl sm:text-2xl font-bold text-center mb-6 text-purple-700 px-4">Nuestros Clientes Satisfechos</h2>
-		<div class="flex justify-center gap-3 sm:gap-6 grayscale hover:grayscale-0 transition duration-300 px-4">
+		<h2 class="text-xl sm:text-2xl font-bold text-center mb-6 text-purple-700 px-4 scroll-reveal">Nuestros Clientes Satisfechos</h2>
+		<div class="flex justify-center gap-3 sm:gap-6 grayscale hover:grayscale-0 transition duration-300 px-4 scroll-reveal">
 		  <img src="/cliente1.svg" alt="Hotel Marriott" class="h-12 w-12 sm:h-16 sm:w-16 rounded-full" />
 		  <img src="/cliente2.svg" alt="Empresa Textiles SA" class="h-12 w-12 sm:h-16 sm:w-16 rounded-full" />
 		  <img src="/cliente3.svg" alt="Restaurante El Jardín" class="h-12 w-12 sm:h-16 sm:w-16 rounded-full" />
@@ -66,13 +117,49 @@ import Footer from '../components/Footer.astro';
 		  <img src="/cliente5.svg" alt="Club Social Elite" class="h-12 w-12 sm:h-16 sm:w-16 rounded-full hidden sm:block" />
 		</div>
 	  </section>
+	  
 	  <!-- Contacto rápido -->
 	  <section class="py-8 sm:py-12 bg-gradient-to-r from-purple-100 to-pink-100 text-center px-4">
-		<h2 class="text-xl sm:text-2xl font-bold mb-4 text-purple-700">¿Listo para tu evento perfecto?</h2>
-		<p class="mb-6 text-gray-600 text-sm sm:text-base">Más de 500 eventos exitosos nos respaldan</p>
-		<a href="https://wa.me/5218341234567" target="_blank" class="bg-green-500 text-white px-6 sm:px-8 py-3 rounded-full font-semibold shadow-lg hover:bg-green-600 transition transform hover:scale-105 text-sm sm:text-base">💬 Contáctanos por WhatsApp</a>
+		<h2 class="text-xl sm:text-2xl font-bold mb-4 text-purple-700 scroll-reveal">¿Listo para tu evento perfecto?</h2>
+		<p class="mb-6 text-gray-600 text-sm sm:text-base scroll-reveal">Más de 500 eventos exitosos nos respaldan</p>
+		<a href="https://wa.me/5218341234567" target="_blank" class="primary-btn bg-green-500 text-white px-6 sm:px-8 py-3 rounded-full font-semibold shadow-lg hover:bg-green-600 transition transform hover:scale-105 text-sm sm:text-base scroll-reveal">💬 Contáctanos por WhatsApp</a>
 	  </section>
 	</main>
 	<Footer />
+
+	<script>
+	// Scroll reveal animations
+	const observerOptions = {
+		threshold: 0.1,
+		rootMargin: '0px 0px -50px 0px'
+	};
+
+	const observer = new IntersectionObserver((entries) => {
+		entries.forEach(entry => {
+			if (entry.isIntersecting) {
+				entry.target.classList.add('revealed');
+			}
+		});
+	}, observerOptions);
+
+	// Observe all scroll-reveal elements
+	document.querySelectorAll('.scroll-reveal').forEach(el => {
+		observer.observe(el);
+	});
+
+	// Smooth parallax effect
+	window.addEventListener('scroll', () => {
+		const scrolled = window.pageYOffset;
+		const parallax = document.querySelector('.hero-parallax') as HTMLElement | null;
+		if (parallax) {
+			parallax.style.transform = `translateY(${scrolled * 0.5}px)`;
+		}
+	});
+
+	// Add loading animation
+	window.addEventListener('load', () => {
+		document.body.classList.add('loaded');
+	});
+	</script>
 </body>
 </html>

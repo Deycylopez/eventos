@@ -21,159 +21,162 @@ import Footer from '../components/Footer.astro';
           <p class="text-sm text-purple-600 font-semibold">*Precios válidos para eventos en el área metropolitana - Consulta por eventos foráneos</p>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12 items-start">
           <!-- Paquete Básico -->
-          <div class="bg-white rounded-xl shadow-lg border-2 border-purple-100 hover:border-purple-300 transition p-8">
-            <div class="text-center mb-6">
-              <div class="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span class="text-2xl">✨</span>
+          <div class="bg-white rounded-xl shadow-lg border-2 border-purple-100 hover:border-purple-300 transition pt-6 pb-8 px-6 flex flex-col h-full">
+            <div>
+              <div class="text-center mb-4">
+                <div class="bg-purple-100 w-14 h-14 rounded-full flex items-center justify-center mx-auto mb-2">
+                  <span class="text-xl">✨</span>
+                </div>
+                <h3 class="text-xl font-bold text-purple-600 mb-1">Paquete Básico</h3>
+                <p class="text-gray-600 text-sm">Ideal para eventos íntimos</p>
               </div>
-              <h3 class="text-2xl font-bold text-purple-600 mb-2">Paquete Básico</h3>
-              <p class="text-gray-600">Ideal para eventos íntimos</p>
+              <div class="text-center mb-4">
+                <span class="text-3xl font-bold text-purple-700">$8,500</span>
+                <span class="text-gray-500 block text-xs">MXN</span>
+              </div>
+              <div class="space-y-2 mb-6 text-left text-sm">
+                <div class="flex items-center">
+                  <span class="text-green-500 mr-2">✓</span>
+                  <span>Coordinación del evento (hasta 50 personas)</span>
+                </div>
+                <div class="flex items-center">
+                  <span class="text-green-500 mr-2">✓</span>
+                  <span>1 reunión de planeación</span>
+                </div>
+                <div class="flex items-center">
+                  <span class="text-green-500 mr-2">✓</span>
+                  <span>Supervisión el día del evento (4 horas)</span>
+                </div>
+                <div class="flex items-center">
+                  <span class="text-green-500 mr-2">✓</span>
+                  <span>Contacto con proveedores básicos</span>
+                </div>
+                <div class="flex items-center">
+                  <span class="text-green-500 mr-2">✓</span>
+                  <span>Decoración básica de mesa principal</span>
+                </div>
+              </div>
             </div>
-            
-            <div class="text-center mb-6">
-              <span class="text-4xl font-bold text-purple-700">$8,500</span>
-              <span class="text-gray-500 block">MXN</span>
+            <div class="mt-auto">
+              <button class="w-full bg-purple-600 text-white py-3 rounded-lg font-semibold hover:bg-purple-700 transition min-h-[48px]">
+                Solicitar Cotización
+              </button>
             </div>
-
-            <div class="space-y-3 mb-8">
-              <div class="flex items-center">
-                <span class="text-green-500 mr-2">✓</span>
-                <span class="text-sm">Coordinación del evento (hasta 50 personas)</span>
-              </div>
-              <div class="flex items-center">
-                <span class="text-green-500 mr-2">✓</span>
-                <span class="text-sm">1 reunión de planeación</span>
-              </div>
-              <div class="flex items-center">
-                <span class="text-green-500 mr-2">✓</span>
-                <span class="text-sm">Supervisión el día del evento (4 horas)</span>
-              </div>
-              <div class="flex items-center">
-                <span class="text-green-500 mr-2">✓</span>
-                <span class="text-sm">Contacto con proveedores básicos</span>
-              </div>
-              <div class="flex items-center">
-                <span class="text-green-500 mr-2">✓</span>
-                <span class="text-sm">Decoración básica de mesa principal</span>
-              </div>
-            </div>
-
-            <button class="w-full bg-purple-600 text-white py-3 rounded-lg font-semibold hover:bg-purple-700 transition">
-              Solicitar Cotización
-            </button>
           </div>
 
           <!-- Paquete Intermedio -->
-          <div class="bg-white rounded-xl shadow-xl border-2 border-purple-400 relative p-8 transform scale-105">
-            <div class="absolute -top-4 left-1/2 transform -translate-x-1/2">
-              <span class="bg-purple-500 text-white px-4 py-1 rounded-full text-sm font-semibold">MÁS POPULAR</span>
+          <div class="flex flex-col items-center h-full">
+            <span class="bg-purple-500 text-white px-4 py-2 rounded-full text-xs font-semibold shadow-lg mb-[-18px] z-20">MÁS POPULAR</span>
+            <div class="bg-white rounded-xl shadow-xl border-2 border-purple-400 pt-8 pb-8 px-6 flex flex-col h-full w-full">
+              <div>
+                <div class="text-center mb-4">
+                  <div class="bg-purple-500 w-14 h-14 rounded-full flex items-center justify-center mx-auto mb-2">
+                    <span class="text-xl text-white">👑</span>
+                  </div>
+                  <h3 class="text-xl font-bold text-purple-600 mb-1">Paquete Intermedio</h3>
+                  <p class="text-gray-600 text-sm">Perfecto para celebraciones especiales</p>
+                </div>
+                <div class="text-center mb-4">
+                  <span class="text-3xl font-bold text-purple-700">$18,500</span>
+                  <span class="text-gray-500 block text-xs">MXN</span>
+                </div>
+                <div class="space-y-2 mb-6 text-left text-sm">
+                  <div class="flex items-center">
+                    <span class="text-green-500 mr-2">✓</span>
+                    <span>Coordinación integral (hasta 120 personas)</span>
+                  </div>
+                  <div class="flex items-center">
+                    <span class="text-green-500 mr-2">✓</span>
+                    <span>3 reuniones de planeación</span>
+                  </div>
+                  <div class="flex items-center">
+                    <span class="text-green-500 mr-2">✓</span>
+                    <span>Coordinación completa el día del evento (8 horas)</span>
+                  </div>
+                  <div class="flex items-center">
+                    <span class="text-green-500 mr-2">✓</span>
+                    <span>Decoración temática personalizada</span>
+                  </div>
+                  <div class="flex items-center">
+                    <span class="text-green-500 mr-2">✓</span>
+                    <span>Coordinación de catering básico</span>
+                  </div>
+                  <div class="flex items-center">
+                    <span class="text-green-500 mr-2">✓</span>
+                    <span>Gestión de DJ y sonido</span>
+                  </div>
+                  <div class="flex items-center">
+                    <span class="text-green-500 mr-2">✓</span>
+                    <span>Fotografía básica del evento</span>
+                  </div>
+                </div>
+              </div>
+              <div class="mt-auto">
+                <button class="w-full bg-purple-600 text-white py-3 rounded-lg font-semibold hover:bg-purple-700 transition min-h-[48px]">
+                  Solicitar Cotización
+                </button>
+              </div>
             </div>
-            
-            <div class="text-center mb-6">
-              <div class="bg-purple-500 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span class="text-2xl text-white">👑</span>
-              </div>
-              <h3 class="text-2xl font-bold text-purple-600 mb-2">Paquete Intermedio</h3>
-              <p class="text-gray-600">Perfecto para celebraciones especiales</p>
-            </div>
-            
-            <div class="text-center mb-6">
-              <span class="text-4xl font-bold text-purple-700">$18,500</span>
-              <span class="text-gray-500 block">MXN</span>
-            </div>
-
-            <div class="space-y-3 mb-8">
-              <div class="flex items-center">
-                <span class="text-green-500 mr-2">✓</span>
-                <span class="text-sm">Coordinación integral (hasta 120 personas)</span>
-              </div>
-              <div class="flex items-center">
-                <span class="text-green-500 mr-2">✓</span>
-                <span class="text-sm">3 reuniones de planeación</span>
-              </div>
-              <div class="flex items-center">
-                <span class="text-green-500 mr-2">✓</span>
-                <span class="text-sm">Coordinación completa el día del evento (8 horas)</span>
-              </div>
-              <div class="flex items-center">
-                <span class="text-green-500 mr-2">✓</span>
-                <span class="text-sm">Decoración temática personalizada</span>
-              </div>
-              <div class="flex items-center">
-                <span class="text-green-500 mr-2">✓</span>
-                <span class="text-sm">Coordinación de catering básico</span>
-              </div>
-              <div class="flex items-center">
-                <span class="text-green-500 mr-2">✓</span>
-                <span class="text-sm">Gestión de DJ y sonido</span>
-              </div>
-              <div class="flex items-center">
-                <span class="text-green-500 mr-2">✓</span>
-                <span class="text-sm">Fotografía básica del evento</span>
-              </div>
-            </div>
-
-            <button class="w-full bg-purple-600 text-white py-3 rounded-lg font-semibold hover:bg-purple-700 transition">
-              Solicitar Cotización
-            </button>
           </div>
 
           <!-- Paquete Premium -->
-          <div class="bg-white rounded-xl shadow-lg border-2 border-purple-100 hover:border-purple-300 transition p-8">
-            <div class="text-center mb-6">
-              <div class="bg-gradient-to-r from-purple-500 to-pink-500 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span class="text-2xl text-white">💎</span>
+          <div class="bg-white rounded-xl shadow-lg border-2 border-purple-100 hover:border-purple-300 transition pt-6 pb-8 px-6 flex flex-col h-full">
+            <div>
+              <div class="text-center mb-4">
+                <div class="bg-gradient-to-r from-purple-500 to-pink-500 w-14 h-14 rounded-full flex items-center justify-center mx-auto mb-2">
+                  <span class="text-xl text-white">💎</span>
+                </div>
+                <h3 class="text-xl font-bold text-purple-600 mb-1">Paquete Premium</h3>
+                <p class="text-gray-600 text-sm">Lujo y exclusividad total</p>
               </div>
-              <h3 class="text-2xl font-bold text-purple-600 mb-2">Paquete Premium</h3>
-              <p class="text-gray-600">Lujo y exclusividad total</p>
+              <div class="text-center mb-4">
+                <span class="text-3xl font-bold text-purple-700">$35,000</span>
+                <span class="text-gray-500 block text-xs">MXN</span>
+              </div>
+              <div class="space-y-2 mb-6 text-left text-sm">
+                <div class="flex items-center">
+                  <span class="text-green-500 mr-2">✓</span>
+                  <span>Evento llave en mano (hasta 200 personas)</span>
+                </div>
+                <div class="flex items-center">
+                  <span class="text-green-500 mr-2">✓</span>
+                  <span>Reuniones ilimitadas de planeación</span>
+                </div>
+                <div class="flex items-center">
+                  <span class="text-green-500 mr-2">✓</span>
+                  <span>Coordinación completa día del evento (12 horas)</span>
+                </div>
+                <div class="flex items-center">
+                  <span class="text-green-500 mr-2">✓</span>
+                  <span>Decoración premium personalizada</span>
+                </div>
+                <div class="flex items-center">
+                  <span class="text-green-500 mr-2">✓</span>
+                  <span>Catering gourmet completo</span>
+                </div>
+                <div class="flex items-center">
+                  <span class="text-green-500 mr-2">✓</span>
+                  <span>Animación y entretenimiento profesional</span>
+                </div>
+                <div class="flex items-center">
+                  <span class="text-green-500 mr-2">✓</span>
+                  <span>Fotografía y videografía profesional</span>
+                </div>
+                <div class="flex items-center">
+                  <span class="text-green-500 mr-2">✓</span>
+                  <span>Wedding planner dedicado</span>
+                </div>
+              </div>
             </div>
-            
-            <div class="text-center mb-6">
-              <span class="text-4xl font-bold text-purple-700">$35,000</span>
-              <span class="text-gray-500 block">MXN</span>
+            <div class="mt-auto">
+              <button class="w-full bg-purple-600 text-white py-3 rounded-lg font-semibold hover:bg-purple-700 transition min-h-[48px]">
+                Solicitar Cotización
+              </button>
             </div>
-
-            <div class="space-y-3 mb-8">
-              <div class="flex items-center">
-                <span class="text-green-500 mr-2">✓</span>
-                <span class="text-sm">Evento llave en mano (hasta 200 personas)</span>
-              </div>
-              <div class="flex items-center">
-                <span class="text-green-500 mr-2">✓</span>
-                <span class="text-sm">Reuniones ilimitadas de planeación</span>
-              </div>
-              <div class="flex items-center">
-                <span class="text-green-500 mr-2">✓</span>
-                <span class="text-sm">Coordinación completa día del evento (12 horas)</span>
-              </div>
-              <div class="flex items-center">
-                <span class="text-green-500 mr-2">✓</span>
-                <span class="text-sm">Decoración premium personalizada</span>
-              </div>
-              <div class="flex items-center">
-                <span class="text-green-500 mr-2">✓</span>
-                <span class="text-sm">Catering gourmet completo</span>
-              </div>
-              <div class="flex items-center">
-                <span class="text-green-500 mr-2">✓</span>
-                <span class="text-sm">Animación y entretenimiento profesional</span>
-              </div>
-              <div class="flex items-center">
-                <span class="text-green-500 mr-2">✓</span>
-                <span class="text-sm">Fotografía y videografía profesional</span>
-              </div>
-              <div class="flex items-center">
-                <span class="text-green-500 mr-2">✓</span>
-                <span class="text-sm">Wedding planner dedicado</span>
-              </div>
-            </div>
-
-            <button class="w-full bg-gradient-to-r from-purple-600 to-pink-600 text-white py-3 rounded-lg font-semibold hover:from-purple-700 hover:to-pink-700 transition">
-              Solicitar Cotización
-            </button>
           </div>
+        </div>
         </div>
 
         <!-- Servicios adicionales -->
